@@ -1,0 +1,123 @@
+﻿<html>
+<head>
+    <script>
+        var person = "John";
+
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a749e2e086.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="materials/style.css" />
+</head>
+<body class="home_grad">
+
+    <!-- Body -->
+
+    <div class="nh_topbar _size2">
+        <div class="nh_topbar_left">
+            <a href="home.design.html" class="btn-light btn _img"><i class="fas fa-chevron-left"></i> <span class="_back">Back</span></a>
+            <!--<a href="home.design.html" class="btn-light btn _img"><img height="25   " src="materials/untitled.png" /></a>-->
+            <!--<div style="margin: 0px 10px" class="_vl _size_hide"></div>-->
+            <h5 class="_title"></h5>
+        </div>
+
+        <div class="nh_topbar_right">
+
+            <div class="dropdown" style="display:inline">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span style="padding: 10px">
+                        <i class="fas fa-house-user"></i> <span class="_size_hide">Hello, </span><b><span class="_name"></span></b>
+                    </span>
+                </button>
+                <div style="padding-bottom:0" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="_main _main1 dropdown-item" href="home.design.html">
+
+                        <i class="fas fa-home">
+                        </i> Home
+                    </a>
+                    <a class="_main _main2 dropdown-item" href="home.design.html"><i class="fas fa-phone-alt"></i>  Extras</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item nh_logout_btn" href="" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-sign-out-alt"></i> Logout...</a>
+
+                </div>
+            </div>
+            <!--<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Logout <i class="fas fa-sign-out-alt _size_hide"></i></button>-->
+        </div>
+    </div>
+    <div>
+        <div style="background-color: white" class="nh_topbar_back"><img src="https://www.nh.org.au/wp-content/themes/northern-health-2019/library/images/logo.svg" height="15" style="margin: 15px 10px" /></div>
+        <div class="jumbotron">
+            <h1 class="display-4">
+                Welcome, <span class="display-4 _name"></span>
+            </h1>
+            <p class="lead">Please select an activity.</p>
+            <hr class="my-4">
+        </div>
+        <span style=" border-top: solid thick gray;" class="nh_home">
+            <button onclick="document.location = 'scale.design.html'" class="home_btn btn btn-primary"><i class="fas fa-running"></i><br />Record ECOG Status</button>
+            <button onclick="document.location = 'scale2.design.html'" class="home_btn btn btn-success"><i class="fas fa-theater-masks"></i><br />Record Likert Score<span style="font-size:x-small">  ("LICK-ert")</span> </button>
+            <button onclick="document.location = 'range.design.html'" class="home_btn btn btn-dark"><i class="fas fa-tint"></i><br />Record Fluid Drain</button>
+            <button class="home_btn btn btn-danger"><i class="fas fa-thumbtack"></i><br />Record VAS Scores</button>
+            <button onclick="document.location = 'start.survey.design.html'" class="home_btn btn btn-warning"><i class="fas fa-grin-beam-sweat"></i><br />Record HADS Score</button>
+            <button class="home_btn btn btn-info"><i class="fas fa-thumbs-up"></i><br />Record QoL Scores</button>
+            <br />
+            <span style="border-top:solid thick gray; font-size:72pt;margin-top:10px;display:block;">
+                <i style="padding-top: 10px; color: dodgerblue; font-size: inherit" class="fas fa-user-md"></i><img style="margin-top: -120px; " src="materials/call.png" /><i style="font-size: x-large; color:gray " class="fas fa-question"></i>
+            </span>
+        </span>
+        <hr style="border-color: dodgerblue; border-width: 2px; margin: 10px" />
+
+        <span class="nh_home">
+            <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+            <button class="btn btn-danger"><i class="fas fa-phone-alt"></i> Extras/About</button>
+            <button class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Website</button>
+
+        </span>
+        <span style="height:100px" class="nh_home _size2_show">
+            <br />
+
+            <img src="https://www.nh.org.au/wp-content/themes/northern-health-2019/library/images/logo.svg" height="20" />
+        </span>
+    </div>
+
+
+
+
+    <!-- Modals and things -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Logout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to log out of the app?
+                </div>
+                <div class="modal-footer">
+                    <button onclick="window.location = 'login.design.html'" type="button" class="btn btn-danger"><i class="fas fa-key"></i> Log out!</button>
+                    <button type="button" class="btn btn-light" data-dismiss="modal"><i class="fas fa-times"></i> Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--JQuery and debug script-->
+
+    <script src="debug.js">
+    </script>
+    <script>
+        ___changeHeader(false, "", "", "John", "._main1")
+
+    </script>
+</body>
+</html>

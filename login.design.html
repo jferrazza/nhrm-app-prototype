@@ -1,0 +1,186 @@
+<html>
+<head>
+    <script>
+        var person = "John";
+
+
+
+    </script>
+
+    <style>
+        .nh_login_start {
+            display: none;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a749e2e086.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="materials/style.css" />
+</head>
+<body class="home_grad">
+
+    <!-- Body -->
+
+
+    <div>
+        <div style="background-color: white; text-align: center; border-bottom: solid 10px dodgerblue; height: 70px" class="nh_topbar_back"><img src="https://www.nh.org.au/wp-content/themes/northern-health-2019/library/images/logo.svg" style="max-width: 80%;max-height:60%; margin: 15px 10px" /></div>
+        <div class="jumbotron" style="background-color: dimgray; color: white">
+            <h1 class="display-4">
+                Welcome
+            </h1>
+            <hr class="my-4">
+        </div>
+
+
+
+
+        <div class="nh_home">
+            <div class="nh_login_start">
+
+                <div style="margin:10px;" class="form-group">
+
+
+                    <p>Please enter your user ID and password</p>
+                    <input type="number" class="form-control" id="inputUser" placeholder="UserId">
+                    <br />
+                    <input type="password" class="form-control" id="inputPass" placeholder="Password">
+                    <br />
+                    <button class="btn btn-danger" onclick="cancel();" style="font-weight:normal"><i class="fas fa-chevron-left"></i> Cancel</button>
+                    <button class="btn btn-primary" onclick="login2()" style="font-weight:bold"><i class="fas fa-sign-in-alt"></i> Log in!</button>
+
+                </div>
+                <span style="border-top:solid thick gray; font-size:72pt;margin-top:20px;display:block;">
+                    <img style="margin-top: -150px; " src="materials/call2.png" />
+                    <i style="margin-left:-30px; padding-top: 10px; color: gray; font-size: inherit" class="fas fa-user-tie"></i><sub><i class="fas fa-concierge-bell"></i></sub>
+                </span>
+            </div>
+            <div class="nh_login_agree">
+                <a href="#bottom">Scroll to bottom</a>
+
+                <div class="alert ">
+                    <h5>Hello</h5>
+                    This app makes it eaiser to perform regular check ups on some patients as it is done remotely. It takes care of issues such as their immobility or anxiety that may affect or be an issue with normal on-premises checkups. <button class="btn btn-sm btn-outline-primary"><i class="fas fa-external-link-alt"></i> Learn More</button>
+                </div>
+                <div class="alert alert-danger">
+                    <b>WARNING!:</b> During a medical emergency call <i class="fas fa-phone-alt"></i><b>000</b>. This app is also only for persons provided it.<br /><br />
+
+                    For terms &amp; condtions and other contacts or information: refer to <button class="no-shadow btn btn-outline-danger">Extras</button>
+                </div>
+                <button onclick="start()" class="btn-lg btn btn-primary">Begin!</button>
+            </div>
+        </div>
+
+    </div>
+    <div class=""> </div>
+
+    </div>
+    <hr style="border-color: dodgerblue; border-width: 2px; margin: 10px" />
+
+    <span class="nh_home">
+
+        <button class="btn btn-danger"><i class="fas fa-phone-alt"></i> Extras/About</button>
+        <button class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Website</button>
+
+    </span>
+    <span id="bottom" style="height:100px" class="nh_home _size2_show">
+        <br />
+
+        <img src="https://www.nh.org.au/wp-content/themes/northern-health-2019/library/images/logo.svg" height="20" />
+    </span>
+
+
+
+
+    <!-- Modals and things -->
+
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Your user ID or password is incorrect. Please try again.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> Go Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert  alert-warning">
+                        This app is used by patients that have been provided it, and records data such as daily feelings, secured according to our Privacy Statement. As such, in use of this app, <b>you agree to our <button class="btn btn-sm btn-outline-dark no-shadow"><i class="fas fa-exclamation"></i> Terms &amp; Conditions</button> and <button class="btn btn-sm btn-outline-dark no-shadow"><i class="fas fa-exclamation"></i> Privacy Policy</button></b> .
+                    </div>
+                    <div class="alert alert-danger">
+                        <b>Do NOT use this app for purposes in the event of a medical emergency!</b> In which case, call <i class="fas fa-phone-alt"></i><b>000</b>. This app is <b>not</b> monitored.<br /><br />
+
+                        For other contacts or information: refer to <button class="no-shadow btn btn-outline-danger">Extras</button>
+                    </div>
+                    <p>
+                        <b> Please read the dialog carefully</b> and tap I Agree and Continue.
+                    </p>
+                    <div class="modal-footer">
+                        <input id="agreeBox" type="checkbox" value="false" /> I agree! 
+
+                        <button id="agreeButton"  onclick="window.location = 'home.design.html'" type="button" class="btn btn-success" disabled><i class="fas fa-chevron-right"></i> Continue!</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JQuery and debug script-->
+
+    <script src="debug.js">
+    </script>
+    <script>
+        ___changeHeader(false, "", "", "John", "._main1")
+        function login() {
+
+            window.location = "home.design.html";
+
+        }
+        function login2() {
+            if ($("#inputPass").val() == "") {
+                $("#exampleModal2").modal('show');
+            }
+            else {
+                $("#exampleModal3").modal('show');
+            }
+        }
+        function start() {
+            $(".nh_login_agree").css("display", "none");
+            $(".nh_login_start").css("display", "inline-block");
+
+        } function cancel() {
+            $("#inputUser").val("");
+            $("#inputPass").val("");
+            $(".nh_login_start").css("display", "none");
+            $(".nh_login_agree").css("display", "inline-block");
+
+        }
+        $("#agreeBox").change(function () {
+            $("#agreeButton").prop("disabled", !$("#agreeBox").is(":checked"))
+        });
+    </script>
+</body>
+</html>

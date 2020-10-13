@@ -1,0 +1,312 @@
+﻿html, body {
+    background: #eee;
+    /*    font-family: Calibri, sans-serif;
+*/
+}
+
+
+
+
+
+
+.btn, .modal-content, .dropdown-menu {
+    box-shadow: 2px 2px 3px #0004;
+}
+.no-shadow{
+    box-shadow:none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    box-shadow: none;
+    border: inset thin gray;
+}
+
+._content {
+    margin: 10px;
+}
+
+.nh_topbar {
+    border-bottom: solid 7px;
+    border-color: dodgerblue;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+    .nh_topbar .btn, .modal-content .btn:not(.no-shadow) {
+        box-shadow: none;
+        border: solid thin #00000007;
+    }
+
+.alert .btn {
+    box-shadow: none;
+}
+
+.nh_home {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.home_btn {
+    margin: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+    .home_btn i {
+        font-size: x-large;
+    }
+
+.nh_home .btn-danger {
+    font-weight: bold;
+}
+
+.nh_bottom {
+    top: inherit;
+    bottom: 0;
+    justify-content: space-around;
+}
+
+._main {
+}
+
+.scale_btns {
+}
+
+    .scale_btns .btn:not(.no-shadow) {
+        width: 100%;
+        border: outset medium transparent;
+        margin: 2px 0;
+        text-align: left;
+    }
+
+.btn.scale_this {
+    box-shadow: inset;
+    border: inset medium blue;
+    font-weight: bold;
+}
+
+
+.scale_label {
+    display: inline-block;
+    border: solid thin white;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 2px;
+    font-size: large;
+    text-align: center;
+}
+
+    .scale_label i {
+        font-size: larger;
+    }
+
+    .scale_label img {
+        height: 30px;
+    }
+
+h5 .scale_label {
+    border-color: gray;
+    background-color: white;
+}
+
+.scale_label .scale_label {
+    background-color: gray;
+    color: white;
+    min-width: 30px;
+}
+
+.scale_showSelected {
+    display: block;
+}
+
+.scale_selected2 {
+    text-transform: lowercase;
+}
+
+.scale_submit {
+    font-weight: bold;
+}
+
+.nh_topbar_back {
+    height: 66px;
+}
+
+
+
+.nh_logout_btn {
+    background: #dc3545;
+    color: white;
+    padding-bottom: 8px;
+    border-radius: 0 0 0.175rem 0.175rem;
+}
+
+    .nh_logout_btn:hover {
+        color: white;
+        background-color: darkred;
+    }
+
+.list-group-item-action {
+    cursor: pointer;
+}
+
+._title {
+    max-width: 70%;
+    margin: auto;
+    padding-left: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+._nav {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+._vl {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    border-left: solid thin black;
+}
+
+.nh_home_hide {
+    border-color: transparent;
+    background: transparent;
+    /*    background: linear-gradient(to bottom, #deefef, transparent);
+*/ color: white;
+    box-shadow: none;
+}
+
+    .nh_home_hide button {
+        box-shadow: 0 0 4px cyan;
+    }
+
+    .nh_home_hide ._img, .nh_home_hide ._vl {
+        display: none;
+    }
+
+.jumbotron {
+    padding-bottom: 1px;
+    border-radius: 0;
+    background-color: white;
+}
+
+.nh_login_start, .nh_login_agree {
+    max-width: 1000px;
+    display: inline-block;
+}
+
+.nh_login_start {
+    display: none;
+}
+
+
+@media only screen and (min-width: 650px) {
+    /*    .nh_home_card:hover {
+        height: 210px;
+        width: 310px;
+        margin: 5px;
+    }
+
+    .nh_home_card:active {
+        height: 200px;
+        width: 300px;
+        margin: 10px;
+    }*/
+
+
+}
+
+._size2_show {
+    display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .nh_topbar._size2 {
+        padding: 5px;
+    }
+
+    .home_btn {
+        width: 70%;
+    }
+
+
+    ._size2_hide {
+        display: none;
+    }
+
+    ._size2_show {
+        display: inherit;
+    }
+
+    ._pages {
+        overflow-x: scroll;
+    }
+
+    ._nav {
+        max-width: 20vw;
+    }
+
+    .nh_topbar_left {
+        max-width: 60%;
+    }
+
+    .nh_topbar_back {
+        height: 47px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .jumbotron {
+        padding-top: 10px;
+    }
+
+    .my-4 {
+        margin: 5px;
+    }
+
+    ._main {
+        min-height: 30px;
+        vertical-align: central;
+    }
+
+    ._size_hide {
+        display: none;
+    }
+
+    ._size_show {
+        display: inherit;
+    }
+
+    html {
+        font-size: small;
+    }
+
+    ._nav1 {
+        display: none;
+    }
+
+    .nh_topbar_left {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .nh_topbar_left {
+        /*        max-width: 80vw;
+*/
+    }
+}

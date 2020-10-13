@@ -1,0 +1,21 @@
+﻿/*body {
+    margin: 50px;
+    padding: 50px;
+    border: double 10px black;
+    border-radius: 20px;
+}*/
+
+html {
+    background-color: black;
+}
+
+h1, h2 {
+    padding: 10px 0px;
+}
+
+.jf_logo {
+    padding: 10px;
+    background-color: black;
+    display: block;
+}
+
